@@ -1,11 +1,15 @@
 import React from 'react';
-import './Loader.css'; // Add animations here
+import './Loader.css';
 
 const Loader = () => {
   return (
     <div className="loader-container">
-      <div className="spinner" />
-      <h2>Loading...</h2>
+      <div className="spinner">
+        <div className="spinner-circle spinner-circle-outer"></div>
+        <div className="spinner-circle spinner-circle-inner"></div>
+        <div className="spinner-circle spinner-circle-single"></div>
+      </div>
+      <h2 className="loader-text">Loading...</h2>
     </div>
   );
 };
