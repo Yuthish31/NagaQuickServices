@@ -1,0 +1,279 @@
+/* Base Styles */
+.ep-sc-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Hero Section */
+  .ep-sc-hero {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .ep-sc-main-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .ep-sc-intro {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+  }
+  
+  /* Section Titles */
+  .ep-sc-section-title {
+    font-size: 2rem;
+    color: #2c3e50;
+    text-align: center;
+    margin: 50px 0 30px;
+    position: relative;
+  }
+  
+  .ep-sc-section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #1e5799;
+    margin: 15px auto;
+  }
+  
+  /* Services Overview */
+  .ep-sc-service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+  }
+  
+  .ep-sc-service-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .ep-sc-service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .ep-sc-service-icon {
+    font-size: 2.5rem;
+    color: #1e5799;
+    margin-bottom: 15px;
+  }
+  
+  .ep-sc-service-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  .ep-sc-service-desc {
+    color: #666;
+  }
+  
+  /* Why Choose Us */
+  .ep-sc-benefits {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .ep-sc-benefit {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .ep-sc-benefit-icon {
+    font-size: 1.8rem;
+    color: #1e5799;
+    margin-right: -26px;
+    flex-shrink: 0;
+  }
+  
+  .ep-sc-benefit-title {
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-bottom: -10px;
+    color: #2c3e50;
+  }
+  
+  .ep-sc-benefit-desc {
+    color: #666;
+  }
+  
+  /* Contact Information */
+  .ep-sc-contact-info {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .ep-sc-contact-desc {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #555;
+  }
+  
+  .ep-sc-contact-methods {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  .ep-sc-contact-method {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+  }
+  
+  .ep-sc-contact-icon {
+    color: #1e5799;
+  }
+  
+  /* Booking Form */
+  .ep-sc-booking-form {
+    background: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 50px 0;
+  }
+  
+  .ep-sc-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .ep-sc-form-group {
+    margin-bottom: 25px;
+  }
+  
+  .ep-sc-form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .ep-sc-form-input, 
+  .ep-sc-form-textarea,
+  .ep-sc-form-select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .ep-sc-form-input:focus, 
+  .ep-sc-form-textarea:focus,
+  .ep-sc-form-select:focus {
+    outline: none;
+    border-color: #1e5799;
+  }
+  
+  .ep-sc-form-textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .ep-sc-select-wrapper {
+    position: relative;
+  }
+  
+  .ep-sc-select-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #666;
+    pointer-events: none;
+  }
+  
+  .ep-sc-submit-btn-normal {
+    display: block;
+    margin: 20px auto 0;
+    background-color: #12438c;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .ep-sc-submit-btn-normal:hover {
+    background-color: #25D366;
+  }
+  
+  /* Service Areas */
+  .ep-sc-service-areas {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .ep-sc-areas-desc {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    color: #555;
+  }
+  
+  .ep-sc-area-icon {
+    font-size: 2rem;
+    color: #1e5799;
+    margin-bottom: -50px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .ep-sc-main-title {
+      font-size: 2rem;
+    }
+    
+    .ep-sc-section-title {
+      font-size: 1.7rem;
+    }
+    
+    .ep-sc-service-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .ep-sc-service-card {
+      width: 100%;
+      max-width: 400px;
+    }
+    
+    .ep-sc-contact-methods {
+      display: block;
+      margin: 60px;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .ep-sc-booking-form {
+      padding: 30px 20px;
+    }
+
+    .ep-sc-form-input, .ep-sc-form-textarea {
+      width: 90%;
+    }
+  }

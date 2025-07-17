@@ -1,0 +1,212 @@
+.ep-ss-services-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Hero Section */
+  .ep-ss-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.432)), url('../../assets/img/li1.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 30px 0;
+  }
+  
+  .ep-ss-main-title {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  
+  .ep-ss-tagline {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .ep-ss-book-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .ep-ss-book-button:hover {
+    background-color: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Section Titles */
+  .ep-ss-section-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 50px 0 30px;
+    color: #2c3e50;
+    position: relative;
+  }
+  
+  .ep-ss-section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #1e5799;
+    margin: 15px auto;
+  }
+  
+  /* Service Categories */
+  .ep-ss-service-category {
+    margin-bottom: 60px;
+  }
+  
+  .ep-ss-category-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .ep-ss-category-icon {
+    font-size: 2rem;
+    color: #1e5799;
+    margin-right: 15px;
+  }
+  
+  .ep-ss-category-title {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin: 0;
+  }
+  
+  .ep-ss-category-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+  }
+  
+  /* Service Grid */
+  .ep-ss-service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+  }
+  
+  .ep-ss-service-card {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: all 0.3s ease;
+    border-top: 4px solid #1e5799;
+  }
+  
+  .ep-ss-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ep-ss-service-icon {
+    font-size: 2rem;
+    color: #1e5799;
+    margin-bottom: 15px;
+  }
+  
+  .ep-ss-service-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+  
+  .ep-ss-service-card p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  /* Emergency Section */
+  .ep-ss-emergency-section {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 40px 20px;
+    margin: 50px 0;
+    text-align: center;
+    border-left: 5px solid #ff6b6b;
+  }
+  
+  .ep-ss-emergency-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .ep-ss-emergency-icon {
+    font-size: 2.5rem;
+    color: #ff6b6b;
+    margin-bottom: 15px;
+  }
+  
+  .ep-ss-emergency-title {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  .ep-ss-emergency-text {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .ep-ss-emergency-button {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .ep-ss-emergency-button:hover {
+    background-color: #ff5252;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .ep-ss-main-title {
+      font-size: 2.2rem;
+    }
+  
+    .ep-ss-tagline {
+      font-size: 1.1rem;
+    }
+  
+    .ep-ss-section-title {
+      font-size: 1.8rem;
+    }
+  
+    .ep-ss-category-title {
+      font-size: 1.5rem;
+    }
+  
+    .ep-ss-service-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

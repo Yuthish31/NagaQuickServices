@@ -1,0 +1,160 @@
+/* Root floating layout */
+.chatbot-container {
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  width: 320px;
+  max-height: 500px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 0.3s ease-out;
+}
+
+/* Main content */
+.chatbot-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Messages window */
+.chat-window {
+  padding: 1rem;
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background-color: #f5f7fa;
+}
+
+/* Message block */
+.msg {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Bot & user shared icon */
+.msg .icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #1f88f0;
+  background-image: url('https://img.icons8.com/ios-filled/50/ffffff/chat.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  flex-shrink: 0;
+}
+
+/* Differentiate user */
+.msg.user {
+  flex-direction: row-reverse;
+}
+
+.msg.user .icon {
+  background-color: #4caf50;
+  background-image: url('https://img.icons8.com/ios-filled/50/ffffff/user.png');
+}
+
+/* Input bar */
+.input-area {
+  display: flex;
+  padding: 0.6rem 0.8rem;
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.input-area input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.input-area button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #1f88f0;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.input-area button:hover {
+  background-color: #186bcc;
+}
+
+/* Toggle button */
+.chatbot-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #1f88f0;
+  border-radius: 50%;
+  background-image: url('https://img.icons8.com/ios-filled/50/ffffff/chat.png');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.chatbot-toggle:hover {
+  background-color: #186bcc;
+}
+
+/* Quick action buttons */
+.quick-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.quick-action-btn {
+  padding: 0.4rem 0.8rem;
+  background-color: #e0ecf8;
+  border: none;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.quick-action-btn:hover {
+  background-color: #c8daf1;
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chat-window {
+  overflow-y: auto;
+  max-height: 400px;
+}

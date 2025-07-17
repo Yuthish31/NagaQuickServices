@@ -1,0 +1,233 @@
+/* Base Styles */
+.ep-sa-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Hero Section */
+  .ep-sa-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.432)), url('../../assets/img/pipe1.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 30px 0;
+  }
+  
+  .ep-sa-main-title {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  
+  .ep-sa-tagline {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .ep-sa-book-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .ep-sa-book-button:hover {
+    background-color: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Section Titles */
+  .ep-sa-section-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 50px 0 30px;
+    color: #2c3e50;
+    position: relative;
+  }
+  
+  .ep-sa-section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #1e5799;
+    margin: 15px auto;
+  }
+  
+  /* Our Story Section */
+  .ep-sa-story-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  /* Our Values Section */
+  .ep-sa-values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+  }
+  
+  .ep-sa-value-card {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .ep-sa-value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ep-sa-value-icon {
+    font-size: 2rem;
+    color: #1e5799;
+    margin-bottom: 15px;
+  }
+  
+  .ep-sa-value-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  .ep-sa-value-checkbox {
+    margin: 15px 0;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .ep-sa-checked {
+    color: #25D366;
+  }
+  
+  /* Services Section */
+  .ep-sa-service-category {
+    margin-bottom: 60px;
+  }
+  
+  .ep-sa-category-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .ep-sa-category-icon {
+    font-size: 2rem;
+    color: #1e5799;
+    margin-right: 15px;
+  }
+  
+  .ep-sa-category-title {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin: 0;
+  }
+  
+  .ep-sa-category-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+  }
+  
+  .ep-sa-service-list {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .ep-sa-service-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .ep-sa-service-checkbox {
+    min-width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-top: 5px;
+  }
+  
+  .ep-sa-service-text h4 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #2c3e50;
+  }
+  
+  .ep-sa-service-text p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .ep-sa-main-title {
+      font-size: 2.2rem;
+    }
+    
+    .ep-sa-tagline {
+      font-size: 1.1rem;
+    }
+    
+    .ep-sa-section-title {
+      font-size: 1.8rem;
+    }
+    
+    .ep-sa-category-title {
+      font-size: 1.5rem;
+    }
+    
+    .ep-sa-values-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .ep-sa-service-item {
+      flex-direction: column;
+    }
+    
+    .ep-sa-service-checkbox {
+      margin-bottom: 15px;
+      margin-right: 0;
+    }
+  }

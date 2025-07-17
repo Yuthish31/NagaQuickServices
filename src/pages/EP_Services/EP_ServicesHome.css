@@ -1,0 +1,192 @@
+/* Base Styles */
+.ep-services-home {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.ep-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.7)), 
+              url('../../assets/img/li.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.ep-main-title {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.ep-tagline {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.ep-contact-button {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.ep-contact-button:hover {
+  background-color: #128C7E;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Titles */
+.ep-section-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 50px 0 30px;
+  color: #2c3e50;
+  position: relative;
+}
+
+.ep-section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #25D366;
+  margin: 15px auto;
+}
+
+.ep-section-overview {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.ep-section-overview h3 {
+  font-size: 1.5rem;
+  color: #3498db;
+  margin-bottom: 15px;
+}
+
+/* Services Grid */
+.ep-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.ep-service-card {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.ep-service-card:hover {
+  transform: translateY(-10px);
+}
+
+.ep-service-icon {
+  font-size: 2.5rem;
+  color: #25D366;
+  margin-bottom: 20px;
+}
+
+.ep-service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+/* Why Choose Us */
+.ep-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.ep-benefit-card {
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.ep-benefit-icon {
+  font-size: 2rem;
+  color: #3498db;
+  margin-bottom: 15px;
+}
+
+.ep-benefit-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+/* Contact Info */
+.ep-contact-info {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.ep-contact-details {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ep-contact-details p {
+  text-align: start;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.ep-whatsapp-button {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.ep-whatsapp-button:hover {
+  background-color: #128C7E;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ep-main-title {
+    font-size: 2.2rem;
+  }
+  
+  .ep-tagline {
+    font-size: 1.2rem;
+  }
+  
+  .ep-section-title {
+    font-size: 1.8rem;
+  }
+}

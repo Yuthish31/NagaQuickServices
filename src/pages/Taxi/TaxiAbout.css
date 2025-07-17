@@ -1,0 +1,169 @@
+.taxi-about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.taxi-about-title {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.taxi-about-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #3498db, #2ecc71);
+}
+
+/* Optional Image Styles - Remove if not using image */
+.about-image-container {
+  margin: 0 auto 2rem;
+  max-width: 800px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Section Styles */
+.about-section {
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.section-subtitle {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.section-subtitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #3498db;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+/* Contact Section */
+.about-contact {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  border-left: 4px solid #3498db;
+}
+
+.contact-info {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .taxi-about-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .taxi-about-title {
+    font-size: 1.8rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .about-text {
+    padding: 0;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .taxi-about-title {
+    font-size: 1.6rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .about-section {
+    padding: 0;
+  }
+}
+
+/* Animation for subtle entrance effect */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.taxi-about-container {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.about-image-container {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.about-section {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.about-section:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.about-section:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.about-section:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+.about-section:nth-child(4) {
+  animation-delay: 1.0s;
+}
+
+.about-contact {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out forwards;
+  animation-delay: 1.2s;
+}

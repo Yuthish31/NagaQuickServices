@@ -1,0 +1,366 @@
+:root {
+    --TC-primary-color: #3498db;
+    --TC-secondary-color: #2ecc71;
+    --TC-accent-color: #f39c12;
+    --TC-dark-color: #2c3e50;
+    --TC-light-color: #ecf0f1;
+    --TC-text-color: #333;
+    --TC-text-light: #5b6566;
+  
+    --button-text: #C3C8DE;
+    --button-plane: #4F29F0;
+    --button-background: #fff;
+  }
+  
+  .TC-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    animation: TC-fadeIn 0.6s ease-out forwards;
+  }
+  
+  .TC-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .TC-title {
+    color: var(--TC-dark-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .TC-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, var(--TC-primary-color), var(--TC-secondary-color));
+    border-radius: 2px;
+  }
+  
+  .TC-subtitle {
+    color: var(--TC-text-light);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .TC-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  /* Section Titles */
+  .TC-section-title {
+    color: var(--TC-dark-color);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  .TC-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--TC-primary-color);
+  }
+  
+  /* Contact Info Styles */
+  .TC-contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .TC-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .TC-contact-icon {
+    font-size: 1.5rem;
+    color: var(--TC-primary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(52, 152, 219, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .TC-contact-details h3 {
+    color: var(--TC-dark-color);
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .TC-contact-details p {
+    color: var(--TC-text-color);
+    font-size: 1rem;
+  }
+  
+  .TC-whatsapp-link {
+    color: #25D366;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .TC-whatsapp-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Form Styles */
+  .TC-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .TC-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .TC-form-group label {
+    color: var(--TC-dark-color);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .TC-form-input {
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .TC-form-input:focus {
+    outline: none;
+    border-color: var(--TC-primary-color);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+  }
+  
+  /* Animated Submit Button */
+  .TC-submit-button {
+    --text: var(--button-text);
+    --plane: var(--button-plane);
+    --background: var(--button-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 0;
+    padding: 0;
+    width: 140px;
+    height: 60px;
+    background: none;
+    color: var(--text);
+    cursor: pointer;
+    outline: none;
+    margin-top: 1rem;
+  }
+  
+  .TC-submit-button svg.btn-layer {
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+    pointer-events: none;
+    fill: var(--background);
+  }
+  
+  .TC-submit-button svg.plane {
+    z-index: 3;
+    position: absolute;
+    left: 32px;
+    display: block;
+    width: 26px;
+    height: 28px;
+    fill: var(--plane);
+    transform: translate3d(0, 0, 0);
+    perspective: 500px;
+  }
+  
+  .TC-submit-button > ul {
+    list-style: none;
+    padding: 0 5px 0 0;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .TC-submit-button > ul > li {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    padding-left: 40px;
+    font: 400 16px 'Poppins', sans-serif;
+    transition: transform .3s ease 0s, opacity .3s ease 0s;
+    color: rgb(0, 0, 0);
+  }
+  
+  .TC-submit-button > ul > li:first-child {
+    opacity: 1;
+  }
+  
+  .TC-submit-button > ul > li:last-child {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    opacity: 0;
+  }
+  
+  .TC-submit-button.active svg.plane {
+    animation: 1.5s orbit alternate linear;
+  }
+  
+  .TC-submit-button.active > ul > li {
+    margin-left: 1rem;
+    transform: translateY(-100%);
+    transition: transform .3s ease 1.2s, opacity .3s ease 1.2s;
+  }
+  
+  .TC-submit-button.active > ul > li:first-child {
+    opacity: 0;
+  }
+  
+  .TC-submit-button.active > ul > li:last-child {
+    opacity: 1;
+  }
+  
+  /* Plane Orbit Animation */
+  @keyframes orbit {
+    0% {
+      transform: rotate3d(1,0,0,0deg) translateZ(60px) scale3d(1,1,1);
+      animation-timing-function: ease-in;
+    }
+    10% {
+      z-index: 3;
+      transform: rotate3d(1,.6,0,-10deg) translateZ(60px) scale3d(1,1,1);
+      animation-timing-function: ease-out;
+    }
+    20% {
+      z-index: 3;
+      transform: rotate3d(1,.6,0,30deg) translateZ(60px) scale3d(1,1,1);
+      animation-timing-function: ease-out;
+    }
+    30% {
+      z-index: 3;
+      transform: rotate3d(1,.6,0,35deg) translateZ(60px) scale3d(1,1,1);
+    }
+    40% {
+      z-index: 1;
+      transform: rotate3d(1,.6,0,120deg) translateZ(60px)  scale3d(.7,.7,1);
+    }
+    70% {
+      z-index: 1;
+      transform: rotate3d(1,.6,0,240deg) translateZ(60px)  scale3d(.7,.7,1);
+      animation-timing-function: ease-out;
+    }
+    100% {
+      z-index: 3;
+      transform: rotate3d(1,0,0,360deg) translateZ(60px)  scale3d(1,1,1);
+    }
+  }
+  
+  /* Location Section */
+  .TC-location-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .TC-location-icon {
+    font-size: 1.5rem;
+    color: var(--TC-primary-color);
+  }
+  
+  .TC-location-address {
+    color: var(--TC-text-color);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .TC-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .TC-container {
+      padding: 1.5rem;
+    }
+  
+    .TC-title {
+      font-size: 2rem;
+    }
+  
+    .TC-section-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .TC-container {
+      padding: 1rem;
+      margin: 1rem;
+    }
+  
+    .TC-title {
+      font-size: 1.8rem;
+    }
+  
+    .TC-subtitle {
+      font-size: 1rem;
+    }
+  
+    .TC-submit-button {
+      width: 120px;
+      height: 50px;
+      margin-left: 80px;
+    }
+  }
+  
+  /* Fade Animation */
+  @keyframes TC-fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
