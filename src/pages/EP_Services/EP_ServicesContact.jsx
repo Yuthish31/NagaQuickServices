@@ -102,7 +102,7 @@ const EP_ServicesContact = () => {
           </div>
           <div className="ep-sc-contact-method">
             <FaEnvelope className="ep-sc-contact-icon" />
-            <span>support@epservices.com</span>
+            <span>nagaraj9498@gmail.com</span>
           </div>
         </div>
       </section>
