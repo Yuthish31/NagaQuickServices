@@ -102,7 +102,7 @@ const EP_ServicesServices = () => {
           <FaClock className="ep-ss-emergency-icon" />
           <h3 className="ep-ss-emergency-title">Emergency Services</h3>
           <p className="ep-ss-emergency-text">We offer 24/7 emergency services for urgent electrical and plumbing repair needs. Contact us anytime for immediate assistance.</p>
-          <a href="tel:7598060503" className="ep-ss-emergency-button">Call Now: 75980 60503</a>
+          <a href="tel:7598060503" className="ep-ss-emergency-button">Call Now: +91 75980 60503</a>
         </div>
       </section>
     </div>
